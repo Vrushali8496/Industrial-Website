@@ -1,0 +1,251 @@
+.banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* Navbar */
+.navbar {
+    transition: 0.3s;
+    font-family: "Montserrat", sans-serif; 
+}
+.navbar{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    padding:30px 0;
+}
+/* Hero Base */
+.hero-slide {
+    height:100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Slide 1 */
+.slide1 {
+    background-image: url("https://themewagon.github.io/industrial/images/industrial_hero_1.jpg");
+}
+
+/* Slide 2 */
+.slide2 {
+    background-image: url("https://themewagon.github.io/industrial/images/industrial_hero_2.jpg");
+}
+
+/* Overlay */
+.hero-slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+.hero-slide .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .search-form .form-control{
+  
+    color: #fff;
+    width: 100%;
+}
+input{
+    font-family: inherit;
+    margin: 0;
+    box-sizing: border-box;
+}
+.feature-img{
+    background-image: url("https://themewagon.github.io/industrial/images/industrial_feature_1.jpg");
+}
+.frame{
+  overflow: hidden;
+  height: 100%;
+  padding: 10px;
+}
+.feature-img-bg{
+  background-size: cover;
+  background-position: center;
+ width: 100%; 
+  transition: transform 0.4s ease;
+  height: 100%;
+  transform: scale(1.1);
+ 
+}
+.frame:hover .feature-img-bg{
+  transform: scale(0.9);   
+}
+.feature-1{
+    background:#f8f9fa;
+    padding:30px;
+    transition:.3s;
+}
+.feature-1:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+.footer-heading{
+     font-size: 14px;
+    letter-spacing:1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer-link a{
+    text-decoration: none;
+    color: #fd5f00;
+}
+.footer-link a:hover{
+    color: black;
+}
+.footer-link li{
+    margin-bottom: 15px;
+}
+.social a{
+    margin:0 5px 5px 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.footer-section{
+    background-color:whitesmoke;
+}
+.name{
+   color: #fd5f00;
+}
+.name:hover{
+    color: black;
+}
+
+.project-item{
+  position: relative;
+  overflow: hidden;
+  height: 400px;   
+}
+.project-item img{
+  width:100%;
+  height:100%;
+  object-fit: cover;   
+  transition: transform 0.4s ease;
+}
+.project-item:hover img{
+  transform: scale(1.1);
+}
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.55);
+  opacity:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition: opacity .4s ease;
+}
+.project-item:hover .overlay{
+  opacity:1;
+}
+.project-icon{
+  color:white;
+  font-size:40px;
+}
+/* heading */
+.project-title{
+  position:absolute;
+  bottom:15px;
+  left:20px;
+  color:white;
+  font-size:20px;
+  transform: translateY(20px);
+  opacity:0;
+  transition:.4s;
+}
+.project-item:hover .project-title{
+  transform: translateY(0);
+  opacity:1;
+}
+.project-section p{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+@media (max-width:320px){
+
+.features-section{
+    padding:30px 10px;
+}
+.features-section h2{
+    font-size:22px;
+}
+.features-section p{
+    font-size:14px;
+    line-height:1.6;
+}
+.icon i{
+    font-size:28px;
+}
+}
+.text-warning-1{
+    color: #fd5f00;
+}
+.text-warning-2{
+    background-color: #fd5f00;
+}
+
+.blog-card img{
+width:350px;
+height:160px;
+object-fit:cover;
+margin-right:20px;
+}
+.blog-card img:hover{
+    transform: scale(0.9);
+}
+.blog-card-small img{
+width:250px;
+height:130px;
+object-fit:cover;
+margin-right:20px;
+}
+
+.blog-content h5{
+color:#ff6600;
+font-weight:600;
+}
+
+.blog-content a{
+color:#ff6600;
+font-size:20px;
+text-decoration:none;
+font-weight:600;
+}
+
+.date{
+font-size:12px;
+letter-spacing:1px;
+color:#999;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+.blog-card,
+.blog-card-small{
+flex-direction:column;
+}
+
+.blog-card img,
+.blog-card-small img{
+width:100%;
+height:auto;
+margin-right:0;
+margin-bottom:15px;
+}
+
+}
+.bi-arrow-right-circle-fill{
+    color: #fd5f00;
+}
